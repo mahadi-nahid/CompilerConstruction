@@ -1,0 +1,8 @@
+flex -olex1.c lex1.l 
+gcc lex1.c -o lex1.exe
+lex1.exe 
+
+
+bison -do parser.c parser.y
+gcc lex.c parser.c -o parser.exe
+parser.exe 
